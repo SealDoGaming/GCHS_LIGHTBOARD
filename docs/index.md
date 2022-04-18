@@ -5,7 +5,6 @@ And Thus he has to use the Github pages markdown to replicate it
 However this does not give him the ability to do any of the things he wants to do.
 
 <button id="test" onclick="change()">Click me</button>
-<button id="boost" onclick="upValue()">Dash Boost</button>
 
 
 <script>
@@ -42,12 +41,8 @@ However this does not give him the ability to do any of the things he wants to d
 
   
   function change() {
-  var randomColor = Math.floor(Math.random()*16777215).toString(16);
-  document.getElementById("test").style.backgroundColor = "#" + randomColor;
+  speedyDash.update({ votes: increment });
 }
-  function upValue() {
-    speedyDash.update({ votes: increment });
-  }
 </script>
 
 ### Markdown
