@@ -5,11 +5,49 @@ And Thus he has to use the Github pages markdown to replicate it
 However this does not give him the ability to do any of the things he wants to do.
 
 <button id="test" onclick="change()">Click me</button>
+
+
+
 <script>
-function change() {
+  import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js;
+  import { doc, setDoc } from 'https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js'
+  const firebaseConfig = {
+
+    apiKey: "AIzaSyB9xPGyQgptYXqQ7eeoE7HJ48YAVkJJBW0",
+
+    authDomain: "gchs-lightboard.firebaseapp.com",
+
+    databaseURL: "https://gchs-lightboard-default-rtdb.firebaseio.com",
+
+    projectId: "gchs-lightboard",
+
+    storageBucket: "gchs-lightboard.appspot.com",
+
+    messagingSenderId: "68756304353",
+
+    appId: "1:68756304353:web:98dd2137e81bf73e8da2a0",
+
+    measurementId: "G-TGRSFPT64W"
+
+  };
+  
+
+
+  const app = initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+  const increment = firebase.firestore.FieldValue.increment(1);
+  const speedyDash = db.collection('light_patterns_votes').doc('Speedy_Dash.pickle');
+
+  
+
+  
+  function change() {
   var randomColor = Math.floor(Math.random()*16777215).toString(16);
   document.getElementById("test").style.backgroundColor = "#" + randomColor;
 }
+  function increase() {
+    speedyDash.update({ votes: increment });
+  }
 </script>
 
 ### Markdown
