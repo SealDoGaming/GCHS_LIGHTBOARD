@@ -5,7 +5,7 @@ And Thus he has to use the Github pages markdown to replicate it
 However this does not give him the ability to do any of the things he wants to do.
 
 <button id="test" onclick="change()">Click me</button>
-
+<button id="boost" onclick="increase()">Dash Boost</button>
 
 
 <script>
