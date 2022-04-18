@@ -5,12 +5,12 @@ And Thus he has to use the Github pages markdown to replicate it
 However this does not give him the ability to do any of the things he wants to do.
 
 <button id="test" onclick="change()">Click me</button>
-<button id="boost" onclick="increase()">Dash Boost</button>
+<button id="boost" onclick="upValue()">Dash Boost</button>
 
 
 <script>
   import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js;
-  import { doc, setDoc } from 'https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js'
+  import { doc, setDoc } from 'https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js';
   const firebaseConfig = {
 
     apiKey: "AIzaSyB9xPGyQgptYXqQ7eeoE7HJ48YAVkJJBW0",
@@ -45,7 +45,7 @@ However this does not give him the ability to do any of the things he wants to d
   var randomColor = Math.floor(Math.random()*16777215).toString(16);
   document.getElementById("test").style.backgroundColor = "#" + randomColor;
 }
-  function increase() {
+  function upValue() {
     speedyDash.update({ votes: increment });
   }
 </script>
