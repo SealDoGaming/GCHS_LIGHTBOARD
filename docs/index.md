@@ -8,7 +8,7 @@ However this does not give him the ability to do any of the things he wants to d
 <script>
 function change() {
   var randomColor = Math.floor(Math.random()*16777215).toString(16);
-  document.getElementById("test").backgroundColor = "#" + randomColor;
+  document.getElementById("test").style.backgroundColor = "#" + randomColor;
 }
 </script>
 
