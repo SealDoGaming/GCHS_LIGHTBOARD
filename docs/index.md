@@ -6,22 +6,25 @@ However this does not give him the ability to do any of the things he wants to d
 
 <button id="test" onclick="change()">Click me</button>
 <p>Music</p>
-<form>
-  <input type="radio" id="music1" name="music" value="blocks.ogg">
-  <label for="music1">Blocks</label><br>
-  <input type="radio" id="music2" name="music" value="cantinaband60.wav">
-  <label for="music2">Cantina Band</label><br>
-  <input type="radio" id="music3" name="music" value="wilhemlscream.wav">
-  <label for="music3">Wilhelm Scream</label>
-</form> 
+<div>
+  <form>
+    <input type="radio" id="music1" name="music" value="blocks.ogg">
+    <label for="music1">Blocks</label><br>
+    <input type="radio" id="music2" name="music" value="cantinaband60.wav">
+    <label for="music2">Cantina Band</label><br>
+    <input type="radio" id="music3" name="music" value="wilhemlscream.wav">
+    <label for="music3">Wilhelm Scream</label>
+  </form> 
+</div>
 <p>Pattern</p>
-<form>
-  <input type="radio" id="pattern1" name="music" value="blocks.ogg">
-  <label for="pattern1">Blocks</label><br>
-  <input type="radio" id="pattern2" name="music" value="cantinaband60.wav">
-  <label for="pattern2">Cantina Band</label><br>
-</form> 
-      
+<div>
+  <form>
+    <input type="radio" id="pattern1" name="music" value="blocks.ogg">
+    <label for="pattern1">Blocks</label><br>
+    <input type="radio" id="pattern2" name="music" value="cantinaband60.wav">
+    <label for="pattern2">Cantina Band</label><br>
+  </form> 
+</div>
 <script>
 
   
