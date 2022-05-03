@@ -25,20 +25,7 @@ However this does not give him the ability to do any of the things he wants to d
     <label for="pattern2">Cantina Band</label><br>
   </form> 
 </div>
-<table>
-  <tr>
-    <th>Column1</th>
-    <th>Column2</th>
-  </tr>
-  <tr>
-    <td>Wow</td>
-    <td>Zap</td>
-  </tr>
-  <tr>
-    <td>Lois</td>
-    <td>Griffin</td>
-  </tr>
-</table>
+
 
 <script>
 
